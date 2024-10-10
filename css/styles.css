@@ -35,6 +35,7 @@ header {
     border-radius: 2px;
 }
 
+/* Estilo de la navegación */
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -42,11 +43,49 @@ nav ul {
     justify-content: space-between;
 }
 
+nav ul li {
+    position: relative;
+}
+
 nav ul li a {
     color: #333;
     text-decoration: none;
     font-size: 14px;
+    display: block;
+    padding: 10px;
 }
+
+nav ul li ul {
+    display: none; /* Ocultar submenú por defecto */
+    position: absolute;
+    top: 100%; /* Posicionar el submenú justo debajo del menú principal */
+    left: 0;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: 1px solid #ccc;
+    z-index: 999; /* Asegura que el submenú esté por encima de otros elementos */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Añadir una sombra para un efecto visual */
+}
+
+nav ul li ul li {
+    padding: 10px;
+    white-space: nowrap;
+}
+
+nav ul li:hover > ul {
+    display: block; /* Mostrar submenú al pasar el ratón */
+}
+
+/* Plegable en dispositivos móviles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
 
 /* Main content */
 main {
@@ -98,7 +137,7 @@ main {
 }
 
 #next-btn {
-    margin-left: auto; /* Esto empuja el botón "next" hacia laa derecha */
+    margin-left: auto; /* Esto empuja el botón "next" hacia la derecha */
 }
 
 #prev-btn:hover, #next-btn:hover {
