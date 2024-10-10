@@ -35,56 +35,80 @@ header {
     border-radius: 2px;
 }
 
+
 /* Estilo de la navegación */
 nav ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
+    list-style-type: none; /* Elimina viñetas */
+    padding: 0; /* Elimina padding por defecto */
+    display: flex; /* Alinea los elementos en línea */
+    justify-content: space-between; /* Espacia los elementos de manera uniforme */
 }
 
 nav ul li {
-    position: relative;
+    position: relative; /* Permite que los submenús se posicionen correctamente */
 }
 
 nav ul li a {
-    color: #333;
-    text-decoration: none;
-    font-size: 14px;
-    display: block;
-    padding: 10px;
+    color: #333; /* Color del texto */
+    text-decoration: none; /* Elimina subrayado */
+    font-size: 14px; /* Tamaño de fuente */
+    display: block; /* Hace que el área clickeable sea más grande */
+    padding: 10px; /* Espaciado alrededor del enlace */
 }
 
+/* Estilos para submenús */
 nav ul li ul {
-    display: none; /* Ocultar submenú por defecto */
-    position: absolute;
-    top: 100%; /* Posicionar el submenú justo debajo del menú principal */
-    left: 0;
-    background-color: white;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    border: 1px solid #ccc;
+    display: none; /* Oculta submenús por defecto */
+    position: absolute; /* Posiciona el submenú */
+    top: 100%; /* Coloca el submenú justo debajo del elemento padre */
+    left: 0; /* Alinea el submenú a la izquierda */
+    background-color: white; /* Color de fondo del submenú */
+    padding: 0; /* Elimina padding */
+    margin: 0; /* Elimina margen */
+    list-style: none; /* Elimina viñetas del submenú */
+    border: 1px solid #ccc; /* Borde para el submenú */
     z-index: 999; /* Asegura que el submenú esté por encima de otros elementos */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Añadir una sombra para un efecto visual */
-}
-
-nav ul li ul li {
-    padding: 10px;
-    white-space: nowrap;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
 }
 
 nav ul li:hover > ul {
-    display: block; /* Mostrar submenú al pasar el ratón */
+    display: block; /* Muestra el submenú al pasar el ratón */
+}
+
+nav ul li ul li {
+    padding: 10px; /* Espaciado para los elementos del submenú */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+}
+
+/* Estilos para sub-submenús */
+nav ul li ul li ul {
+    display: none; /* Oculta sub-submenú por defecto */
+    position: absolute; /* Posiciona el sub-submenú */
+    top: 0; /* Alinéalo con el elemento padre */
+    left: 100%; /* Muestra el sub-submenú a la derecha */
+    margin-left: 10px; /* Espacio entre el submenú y sub-submenú */
+}
+
+nav ul li ul li:hover > ul {
+    display: block; /* Muestra el sub-submenú al pasar el ratón */
+}
+
+/* Estilo de los enlaces en los submenús */
+nav ul li ul li a {
+    color: #333; /* Color del texto del submenú */
+    font-size: 12px; /* Ajusta el tamaño de fuente */
+    padding: 8px; /* Espaciado adicional */
 }
 
 /* Plegable en dispositivos móviles */
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: column; /* Cambia a una columna en pantallas pequeñas */
+        align-items: flex-start; /* Alinea los elementos a la izquierda */
     }
 }
+
+
 
 
 /* Main content */
