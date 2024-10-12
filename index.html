@@ -10,7 +10,7 @@
     <header>
         <div class="container">
             <div class="header-top">
-                <img src="/placeholder.svg?height=34&width=134" alt="Mercado Libre Logo" class="logo">
+                <a href="./index.html"><img src="./images/Designer.jpeg" alt="Mercado sensei" class="logo">
                 <div class="search-bar">
                     <input type="search" placeholder="Buscar productos, marcas y más...">
                 </div>
@@ -37,8 +37,8 @@
                         </ul>
                     </li>
                     <li><a href="#">Ayuda / PQR</a></li>
-                    <li><a href="#">Crea tu cuenta</a></li>
-                    <li><a href="#">Ingresa</a></li>
+                    <li><a href="html/sing-up.html">Crea tu cuenta</a></li>
+                    <li><a href="/html/login.html">Ingresa</a></li>
                     <li><a href="#">Mis compras</a></li>
                     <li><a href="#"><i class="icon-cart"></i></a></li>
                 </ul>
@@ -68,13 +68,7 @@
                 <div class="icon">👤</div>
                 <h3>Ingresa a tu cuenta</h3>
                 <p>Disfruta de ofertas y compra sin límites.</p>
-                <a href="#">Ingresar a tu cuenta</a>
-            </div>
-            <div class="feature-card">
-                <div class="icon">📍</div>
-                <h3>Ingresa tu ubicación</h3>
-                <p>Consulta costos y tiempos de entrega.</p>
-                <a href="#">Ingresar ubicación</a>
+                <a href="html/login.html">Ingresar a tu cuenta</a>
             </div>
             <div class="feature-card">
                 <div class="icon">💳</div>
@@ -101,46 +95,59 @@
                 <a href="#">Cómo funciona</a>
             </div>
         </section>
-
-        <section class="products-section">
-            <div class="product-card">
-                <h3>Oferta del día</h3>
-                <div class="product-details">
-                    <img src="/placeholder.svg?height=150&width=150" alt="Producto del día">
-                    <div>
-                        <h4>Nombre del producto</h4>
-                        <p class="price">$ 99.999</p>
-                        <p class="shipping">Envío gratis</p>
+        <section class="ms-offers-carousel">
+            <div class="ms-carousel-container">
+                <button class="ms-carousel-button ms-prev" aria-label="Anterior">&lt;</button>
+                <div class="ms-carousel-track">
+                    <div class="ms-carousel-slide">
+                        <img src="./images/iphone-home.png" alt="iphone-15">
+                        <h3>Iphone 15 pro 128gb</h3>
+                        <p class="ms-price">$ 4.369.000</p>
+                        <p class="ms-installments">en 12 cuotas de $ 150.408 sin interés</p>
+                        <p class="ms-shipping">Envío gratis</p>
+                        <a href="./html/pagos.html"><button class="ms-pay-button">Pagar ahora</button></a>
+                    </div>
+                    <div class="ms-carousel-slide">
+                        <img src="./images/tenis-home.png" alt="Disfraz Astronauta Espacial Nasa Talla Niños Y Niñas">
+                        <h3>Tenis adidas VL Court 3.0-Blanco</h3>
+                        <p class="ms-price">$ 329.950</p>
+                        <p class="ms-installments">en 12 cuotas de $ 30.000 sin interés</p>
+                        <p class="ms-shipping">Envío gratis</p>
+                        <a href="./html/pagos.html"><button class="ms-pay-button">Pagar ahora</button></a>
+                    </div>
+                    <div class="ms-carousel-slide">
+                        <img src="./images/disfraz-home.png" alt="Disfraz Niño Batman Halloween">
+                        <h3>Disfraz amongus Halloween</h3>
+                        <p class="ms-price">$ 48.000</p>
+                        <p class="ms-installments">en 12 cuotas de $ 4.000 sin interés</p>
+                        <a href="./html/pagos.html"><button class="ms-pay-button">Pagar ahora</button></a>
+                    </div>
+                    <div class="ms-carousel-slide">
+                        <img src="./images/audifonos-home.png" alt="Disfraz Disfraces Niña Masha Y El Oso Halloween">
+                        <h3>Audifinos Gamer Hylas H260-p Redragon Rosa</h3>
+                        <p class="ms-price">$ 89.900</p>
+                        <p class="ms-installments">en 3 cuotas de $ 29.967 sin interés</p>
+                        <a href="./html/pagos.html"><button class="ms-pay-button">Pagar ahora</button></a>
+                    </div>
+                    <div class="ms-carousel-slide">
+                        <img src="./images/guantes.png" alt="Decoracion Halloween Fiestas Araña De Felpa">
+                        <h3>Guantes Moto Ciclista Con Proteccion En Nudillos Y En Palmas</h3>
+                        <p class="ms-price">$ 35.000</p>
+                        <p class="ms-installments">en 3 cuotas de $ 11.667 sin interés</p>
+                        <a href="./html/pagos.html"><button class="ms-pay-button">Pagar ahora</button></a>
+                    </div>
+                    <div class="ms-carousel-slide">
+                        <img src="./images/silla-home.png" alt="Orejas De Elfo, Accesorio, Cosplay">
+                        <h3>Silla Gamer Escritorio Ergonomica Giratoria Ajustable 180° Pc Gaming Tapizado Cuero Femmto</h3>
+                        <p class="ms-price">$ 534.503</p>
+                        <p class="ms-installments">en 3 cuotas de $ 11.667 sin interés</p>
+                        <a href="./html/pagos.html"><button class="ms-pay-button">Pagar ahora</button></a>
                     </div>
                 </div>
-            </div>
-            <div class="product-card">
-                <h3>Ofertas</h3>
-                <a href="#">Mostrar todas las ofertas</a>
-                <div class="product-grid">
-                    <div class="product-item">
-                        <img src="/placeholder.svg?height=100&width=100" alt="Producto 1">
-                        <p class="price">$ 99.999</p>
-                        <p class="shipping">Envío gratis</p>
-                    </div>
-                    <div class="product-item">
-                        <img src="/placeholder.svg?height=100&width=100" alt="Producto 2">
-                        <p class="price">$ 99.999</p>
-                        <p class="shipping">Envío gratis</p>
-                    </div>
-                    <div class="product-item">
-                        <img src="/placeholder.svg?height=100&width=100" alt="Producto 3">
-                        <p class="price">$ 99.999</p>
-                        <p class="shipping">Envío gratis</p>
-                    </div>
-                    <div class="product-item">
-                        <img src="/placeholder.svg?height=100&width=100" alt="Producto 4">
-                        <p class="price">$ 99.999</p>
-                        <p class="shipping">Envío gratis</p>
-                    </div>
-                </div>
+                <button class="ms-carousel-button ms-next" aria-label="Siguiente">&gt;</button>
             </div>
         </section>
+
     </main>
 
     <footer>
